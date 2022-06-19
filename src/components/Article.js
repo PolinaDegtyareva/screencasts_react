@@ -18,7 +18,7 @@ class Article extends PureComponent {
         console.log('---', 'mounting')
     }
 
-    componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps(nextProps, nextContext) {
         if (nextProps.defaultOpen !== this.props.defaultOpen) this.setState ({
             isOpen: nextProps.defoultOpen
         })
