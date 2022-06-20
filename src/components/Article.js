@@ -38,7 +38,7 @@ class Article extends PureComponent {
                     <h2 onClick = {this.incrementCounter}>
                         {article.title}
                         clicked {this.state.count}
-                        <button onClick={onButtonClick} className="btn bth-primary btn-lg float-right">
+                        <button onClick={onButtonClick} className="btn btn-outline-secondary btn-lg float-end">
                             {isOpen ? 'close' : 'open'}
                         </button>
                     </h2>
